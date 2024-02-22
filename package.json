@@ -1,0 +1,15 @@
+{
+    "name": "pantunhub",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "packages/server",
+        "packages/client"
+    ],
+    "scripts": {
+        "dev": "concurrently \"cd packages/api-server && npm run dev\" \"cd packages/client && npm run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
